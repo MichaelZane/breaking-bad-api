@@ -31,13 +31,12 @@ const SearchForm = props => {
                     {props.characters.map(character => (
                         <CharacterCard
                         key= {character.id}
-                        image={character.url}
+                        img={character.img}
                         name={character.name}
                         birthday={character.birthday}
                         occupation={character.occupation}
                         status={character.status}
                         nickname={character.nickname}
-                        appearance={character.appearance}
                         portrayed={character.portrayed}
                         category={character.category}
                         />
@@ -47,13 +46,12 @@ const SearchForm = props => {
                     {results.map(character => (
                         <CharacterCard
                             key= {character.id}
-                            image={character.url}
+                            img={character.img}
                             name={character.name}
                             birthday={character.birthday}
                             occupation={character.occupation}
                             status={character.status}
                             nickname={character.nickname}
-                            appearance={character.appearance}
                             portrayed={character.portrayed}
                             category={character.category}
 
