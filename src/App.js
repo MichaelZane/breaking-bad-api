@@ -15,7 +15,7 @@ function App() {
       </nav>
       <Route exact path='/' component={Home}/>
       <Route exact path='/characters/' component={CharacterList}/>
-      <Route exact path='/episodes/' component={EpisodeList}
+      <Route exact path='/episodes/' component={EpisodeList}/>
     </div>
   );
 }
