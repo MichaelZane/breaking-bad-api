@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import SearchForm from './SearchForm';
 
-const CharacterList = (props) => {
+const CharacterList = () => {
     //set state for data
     const [characters, setCharacters] = useState([]);
 // api request using useEffect
