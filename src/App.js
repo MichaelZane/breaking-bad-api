@@ -8,7 +8,7 @@ import Home from './components/Home'
 function App() {
   return (
     <div className="App">
-      <nav>
+      <nav className= "nav-links">
         <NavLink exact to='/'>Home</NavLink>
         <NavLink to='/Characters'>Characters</NavLink>
         <NavLink to='Episodes'>Episodes</NavLink>

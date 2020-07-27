@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import SearchForm from './SearchForm';
+import CharacterCard from './CharacterCard'
+
 
 const CharacterList = () => {
     //set state for data
@@ -19,8 +20,26 @@ const CharacterList = () => {
     }, []);
 
     return (
-        <div>
-            <SearchForm characters={characters}/>
+        <div className="card-wrapper" >
+            
+            {characters.map(character => (
+                <CharacterCard
+                    key= {character.id}
+                    img={character.img}
+                    name={character.name}
+                    birthday={character.birthday}
+                    occupation={character.occupation}
+                    status={character.status}
+                    nickname={character.nickname}
+                    portrayed={character.portrayed}
+                    category={character.category}
+
+                />
+            ))}
+                
+            
+
+        
         </div>
     );
 }

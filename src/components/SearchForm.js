@@ -16,7 +16,7 @@ const SearchForm = props => {
         setSearch(event.target.value);
     };
     return (
-        <section>
+        <section className="sect-wrap" >
             <form>
                 <input
                 type='text'
