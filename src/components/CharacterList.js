@@ -10,9 +10,9 @@ const CharacterList = () => {
     useEffect(() => {
         axios
             .get(`https://www.breakingbadapi.com/api/characters/`)
-            .then(response => {
-                setCharacters(response.data);
-                console.log(response.data)
+            .then(res => {
+                setCharacters(res.data);
+                console.log(res.data)
             })
             .catch(error => {
                 console.log('A meth Head stole your data, try again!', error)
